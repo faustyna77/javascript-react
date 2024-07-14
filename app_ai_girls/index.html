@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozmowa z AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #chat-box {
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: white;
+            margin-bottom: 10px;
+            height: 400px;
+            overflow-y: auto;
+        }
+        #user-input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #send-button {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Napisz wiadomość...">
+    <button id="send-button">Wyślij</button>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
